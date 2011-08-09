@@ -1,0 +1,6 @@
+(p), being a function that returns itself, when 'fully expanded' as described
+in the normal-order evaluation, should simply return itself.
+
+On the other hand, if using applicative-order evaluation, 'evaluate the arguments
+and then apply' will never complete because (p) is a valid method call with zero 
+arguments.

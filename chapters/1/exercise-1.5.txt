@@ -1,0 +1,8 @@
+(p), being a function that returns itself, when 'fully expanded' as described
+in the normal-order evaluation, should simply return itself.  Since it is not evaluated
+until the last necessary moment, the method should return 0.
+
+On the other hand, if using applicative-order evaluation, 'evaluate the arguments
+and then apply' will never complete because (p) is a valid method call with zero 
+arguments.  It will recursively call itself forever, and since we evaluate the
+arguments first, it will never complete.
